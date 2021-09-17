@@ -1,0 +1,187 @@
+/************************************************************************************
+*
+* Google Nexus Menu
+*
+/************************************************************************************/
+
+html.cursor {
+	cursor: pointer;
+}
+
+#sideNav a:hover {
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;			
+	-ms-transition: 0.5s ease;						
+	transition: 0.5s ease;	
+	color:#fff;
+}
+
+#menu-ul img {
+	border: 4px solid #eee;
+	max-width:100%;
+}
+.navbar {
+	padding:0 0;
+}
+nav {
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	height: 59px;
+	border-bottom:1px solid #ddd;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:20;
+	background-color:#ffffff;
+}
+	#menu-ul,
+	#sideNav ul,
+	#sideNav ul ul	{
+		text-align:center;
+		margin:0;
+		padding:0;
+		list-style:none;
+		float:left;
+	}
+	#sideNav li,#btn-menu {
+			margin:0;
+			float:left;
+			border-right:1px solid #ddd;
+			font-size:18px;
+		}
+		
+		#btn-menu,
+		#sideNav a {
+			color:#5b6064;
+			text-decoration:none;
+			display:block;
+			padding:10px 30px;
+			height:59px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			line-height:35px;
+		}
+		
+		#sideNav a:hover {
+			color:#ffffff;
+			background-color: #5b6064;
+		}	
+		
+	
+	#sideNav,
+	#sideNav.showFullMenu,
+	#sideNav ul ul li,
+	#sideNav.showFullMenu ul ul li	 {
+		-webkit-transition: 0.2s ease;
+		-moz-transition: 0.2s ease;			
+		-ms-transition: 0.2s ease;						
+		transition: 0.2s ease;		
+	}
+	
+	#sideNav {
+		position: fixed;
+		left:-60px;
+		top:59px;
+		width: 60px;
+		height:auto;
+		border-right:1px solid #ddd;						
+		background-color:#ffffff;
+		overflow-y: auto;
+		overflow:hidden;	
+	}
+		
+		#sideNav.showFullMenu {
+			left:0;
+			width: 311px;		
+		}
+
+			#sideNav.showFullMenu ul ul li {
+				height:59px;				
+			}	
+	
+	
+		#sideNav > ul {
+			width: 100%;		
+		}
+	
+		#sideNav ul li {
+			width: 100%;
+			margin:0;		
+			font-weight:300;
+		}
+		
+		#sideNav ul li a {
+			border-bottom:1px solid #ddd;		
+			padding-left:70px;
+		}
+		
+		#sideNav ul li span {
+			position: relative;
+			top:3px;
+		}		
+		
+		#sideNav ul ul li {
+			overflow:hidden;
+			height: 0;				
+		}
+		
+				
+
+
+/************************************************************************************
+*
+* Menu Icons
+*
+/************************************************************************************/		
+		
+	.icon {
+		background: transparent url('../images/icons.png') no-repeat 0 0;	
+	}
+	
+		.icon-menu {
+			text-indent:-99999em;
+			background-position: 0 0;
+		}
+		
+		.icon-menu:hover {
+			background-position: -59px 0;
+			background-color:#5b6064;
+		}		
+		
+		.icon-menu.icon-menu-active {
+			background-position: -120px 0;
+			background-color:#fff;
+		}				
+		
+		
+		
+/************************************************************************************
+*
+* Responsive
+*
+/************************************************************************************/		
+
+/*------------------------------------------------------------------*/ 
+/*	2) Note: Design for a width of 480 px
+/*------------------------------------------------------------------*/
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+
+
+	nav a,
+	#sideNav a {
+		padding:10px 15px;
+	}	
+	
+	nav a#btn-menu {
+		padding:10px 30px;	
+	}
+
+	#sideNav.showFullMenu,
+	#sideNav.showFullMenu li,
+	#sideNav.showFullMenu	a	 {
+		width: 100%;
+	}    
+
+}
+

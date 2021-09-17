@@ -1,0 +1,38 @@
+td.details-control {
+    background: url('../images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.details td.details-control {
+    background: url('../images/details_close.png') no-repeat center center;
+}
+thead{
+    background:#f6f6f6;
+}
+.edit{
+    background: url('../images/edit.png') no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}
+.delete{
+    background: url('../images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+table.dataTable.display tbody tr.child {
+    background: white;
+}
+table{
+    width:100%;
+}
+table.display tr.even .colSelected{
+    background-color: black;
+}
+table.display tr.odd .colSelected{
+    background-color: black;
+}
+td.table-cell-edit{
+    background-color: rgba(66, 172, 45, 0.555);
+}
+.fa-check{
+    background:lightgreen;
+}
+
